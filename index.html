@@ -24,8 +24,8 @@
         }
         
         img {
-            width: 100%; /* Mobile friendly width */
-            max-width: 300px;
+            width: 100%;
+            max-width: 250px; /* Adjust size */
             height: auto;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -33,7 +33,7 @@
         
         h1 {
             color: #d32f2f;
-            font-size: 2rem; /* Slightly smaller for phone screens */
+            font-size: 1.8rem; 
             margin-bottom: 20px;
             line-height: 1.3;
         }
@@ -72,7 +72,7 @@
 </head>
 <body>
     <div class="container">
-        <img id="mainImage" src="https://media.tenor.com/K2sEqmps5lYAAAAi/mochi-peach-cat-cute.gif" alt="Cute Cat">
+        <img id="mainImage" src="https://media.tenor.com/Vm3jQkFfHngAAAAi/cute-bear.gif" alt="Cute Bear">
         
         <h1 id="question">Evu baby, Will you be my Valentine?🌹🌹</h1>
         
@@ -114,9 +114,11 @@
             const image = document.getElementById("mainImage");
             const buttons = document.querySelector(".buttons");
 
-            // Change text and image
+            // Change text
             question.innerText = "YIPPPEEEEEEE YAYAYAYAYAYAYAYA I LOVE YOU";
-            image.src = "https://media.tenor.com/zGMjRA_7n5sAAAAi/cute-cat-kiss.gif";
+            
+            // Change image to Happy/Kissing Bears
+            image.src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif";
             
             // Hide buttons
             buttons.style.display = "none";
