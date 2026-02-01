@@ -10,7 +10,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #ffdde1; /* Soft pink background */
+            background-color: #ffdde1;
             font-family: 'Arial', sans-serif;
             margin: 0;
             overflow: hidden; 
@@ -72,7 +72,7 @@
 </head>
 <body>
     <div class="container">
-        <img id="mainImage" src="https://media.tenor.com/Vm3jQkFfHngAAAAi/cute-bear.gif" alt="Cute Bear">
+        <img id="mainImage" src="https://media.tenor.com/K2sEqmps5lYAAAAi/mochi-peach-cat-cute.gif" alt="Cute Cat Asking">
         
         <h1 id="question">Evu baby, Will you be my Valentine?🌹🌹</h1>
         
@@ -99,10 +99,8 @@
             const noBtn = document.getElementById("noBtn");
             const yesBtn = document.getElementById("yesBtn");
 
-            // Change text
             noBtn.innerText = phrases[Math.min(noCount + 1, phrases.length - 1)];
             
-            // Grow Yes button
             const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize);
             yesBtn.style.fontSize = (currentSize * 1.4) + "px";
 
@@ -114,13 +112,11 @@
             const image = document.getElementById("mainImage");
             const buttons = document.querySelector(".buttons");
 
-            // Celebration Text
             question.innerText = "YIPPPEEEEEEE YAYAYAYAYAYAYAYA I LOVE YOU";
             
-            // Celebration GIF (Bears Kissing)
+            // Celebration GIF
             image.src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif";
             
-            // Hide Buttons
             buttons.style.display = "none";
         }
     </script>
